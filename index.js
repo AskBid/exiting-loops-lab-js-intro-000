@@ -1,4 +1,5 @@
 function breakOut(array, changeValue, stopValue) {
+    console.log('breakOut');
     for (var i = 0; i < array.length; i++) {
         if (array[i] === stopValue) {
             return array
@@ -10,6 +11,7 @@ function breakOut(array, changeValue, stopValue) {
 }
 
 function keepGoing(array, changeValue, skipValue) {
+    console.log('keepGoing');
     for (var i = 0; i < array.length; i++) {
         if (array[i] === skipValue) {
             continue
