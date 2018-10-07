@@ -23,5 +23,10 @@ function keepGoing(array, changeValue, skipValue) {
 }
 
 return findBy(array, findFn) {
-    
+    for (var i = 0; i < array.length; i++) {
+        findFn(array[i]) {
+            return array[i]
+        }
+    }
+    return null
 }
