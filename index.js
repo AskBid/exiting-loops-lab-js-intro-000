@@ -3,10 +3,19 @@ function breakOut(array, changeValue, stopValue) {
     for (var i = 0; i < array.length; i++) {
         if (array[i] === stopValue) {
 			console.log(`before break ${array}`);
-            break
+            return array
         }
         array[i] = changeValue;
-		console.log(array)
+		console.log(array);
     }
-    return array
+
 }
+
+// function keepGoing(array, changeValue, skipValue) {
+//     for (var i = 0; i < array.length; i++) {
+//         if (array[i] === stopValue) {
+// 			console.log(`before break ${array}`);
+//             break
+//         }
+//     }
+// }
