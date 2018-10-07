@@ -19,4 +19,5 @@ function keepGoing(array, changeValue, skipValue) {
         array[i] = changeValue;
 		console.log(array);
     }
+    return array
 }
