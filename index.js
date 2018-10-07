@@ -1,8 +1,6 @@
 function breakOut(array, changeValue, stopValue) {
-	console.log('console works');
     for (var i = 0; i < array.length; i++) {
         if (array[i] === stopValue) {
-			console.log(`before break ${array}`);
             return array
         }
         array[i] = changeValue;
@@ -11,11 +9,12 @@ function breakOut(array, changeValue, stopValue) {
 
 }
 
-// function keepGoing(array, changeValue, skipValue) {
-//     for (var i = 0; i < array.length; i++) {
-//         if (array[i] === stopValue) {
-// 			console.log(`before break ${array}`);
-//             break
-//         }
-//     }
-// }
+function keepGoing(array, changeValue, skipValue) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] === skipValue) {
+            continue
+        }
+        array[i] = changeValue;
+		console.log(array);
+    }
+}
